@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block title %}Celeste Guide - Home{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to my Celeste Guide</h1>
+        <p class="lead">This guide will help you keep track of all the collectibles you acquire</p>
+        <hr class="my-4">
+        <p class="lead">
+            <a class="btn btn-danger btn-lg" href="{{ url_for('logout') }}" role="button">Logout</a>
+            <a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Login</a>
+            <a class="btn btn-success btn-lg" href="{{ url_for('register') }}" role="button">Sign Up</a>
+        </p>
+    </div>
+    
+    <div class="row">
+        <p class="lead">Select the chapter you wish to complete below!</p>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Chapter 1: Forsaken City</h4>
+                    <p class="card-text">A desolate urban landscape, where crumbling buildings and tangled vegetation reclaim forgotten streets.</p>
+                    <a href="{{ url_for('chapter1') }}" class="btn btn-primary">Explore Chapter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Chapter 2: Old Cite</h4>
+                    <p class="card-text">Among ancient ruins, moss-covered stones stand silent witness to the passage of time, while overgrown foliage conceals secrets within.</p>
+                    <a href="{{ url_for('chapter1') }}" class="btn btn-primary">Explore Chapter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Chapter 3: Celestial Resort</h4>
+                    <p class="card-text">Within the decaying grandeur of a once-luxurious hotel, faded opulence meets faded dreams, with chandeliers dimly illuminating dusty corridors.</p>
+                    <a href="{{ url_for('chapter1') }}" class="btn btn-primary">Explore Chapter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Chapter 4: Golden Ridge</h4>
+                    <p class="card-text">Windswept peaks stretch towards the sky, bathed in the warm glow of sunlight, where rocky outcroppings offer precarious footing against the gusts.</p>
+                    <a href="{{ url_for('chapter1') }}" class="btn btn-primary">Explore Chapter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Chapter 5: Mirror Temple</h4>
+                    <p class="card-text"> Deep within shadowy halls, mysterious mirrors reflect distorted images, casting an eerie ambiance upon the labyrinthine corridors.</p>
+                    <a href="{{ url_for('chapter1') }}" class="btn btn-primary">Explore Chapter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Chapter 6: Reflection</h4>
+                    <p class="card-text">Within a surreal dreamscape, reality bends and twists, with shifting platforms suspended in a colorful void, creating a kaleidoscopic landscape.</p>
+                    <a href="{{ url_for('chapter1') }}" class="btn btn-primary">Explore Chapter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Chapter 7: The Summit</h4>
+                    <p class="card-text">Ascent through diverse terrain, from icy cliffs to stormy skies, as the relentless climb towards the pinnacle continues.</p>
+                    <a href="{{ url_for('chapter1') }}" class="btn btn-primary">Explore Chapter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Chapter 8: Core</h4>
+                    <p class="card-text">Amidst tranquil surroundings, Celeste Mountain offers a peaceful respite, where the echoes of past challenges fade into the quiet serenity of nature.</p>
+                    <a href="{{ url_for('chapter1') }}" class="btn btn-primary">Explore Chapter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

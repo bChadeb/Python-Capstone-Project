@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+{% block title %}Celeste Guide - Forsaken City{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Forsaken City</h1>
+        <p>Welcome to Chapter 1 of Celeste, the Forsaken City!</p>
+        <a href="{{ url_for('home') }}" class="btn btn-primary mb-4">Back to Home</a>
+
+        <h2>Strawberries</h2>
+        <ol>
+            <li><strong>Strawberry 1:</strong> Reach the top of the first section.
+            <br>
+            <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/c/cf/180124_CI_C1_S1.png?width=640" alt="Strawberry 1">
+            <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                <input type="hidden" name="collectible_name" value="strawberry1">
+                <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry1', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+            </form>
+            </li>
+            <li><strong>Strawberry 2:</strong> Find the hidden room in the middle of the level.
+            <br>
+            <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/a/ac/180124_CI_C1_S2.png?width=640" alt="Strawberry 2">
+            <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                <input type="hidden" name="collectible_name" value="strawberry2">
+                <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry2', False) %}checked{% endif %}  onchange="this.form.submit()"> Collected
+            </form>
+            </li>
+            <li><strong>Strawberry 3:</strong> Complete the side challenge to reach the collectible.
+            <br>
+            <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/0/09/180124_CI_C1_S3.png?width=640" alt="">
+            <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                <input type="hidden" name="collectible_name" value="strawberry3">
+                <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry3', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+            </form>
+            </li>
+            <li><strong>Strawberry 4:</strong> Wall jump off the left side of the screen after a long climb.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/7/7c/180124_CI_C1_S4.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry4">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry4', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 5:</strong> Use a dash to reach the collectible hidden behind a breakable wall.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/1/13/180124_CI_C1_S5.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry5">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry5', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 6:</strong> Climb to the top of the second section.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/e/e2/180124_CI_C1_S6_B.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry6">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry6', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 7:</strong> Bounce off the moving platform to reach the collectible above.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/d/d2/180124_CI_C1_S7_B.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry7">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry7', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 8:</strong> Dash diagonally to reach the collectible above a series of spikes.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/4/41/180124_CI_C1_S8.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry8">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry8', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 9:</strong> Use the dash to break through the destructible floor and collect the strawberry.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/a/ac/180124_CI_C1_S9_C.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry9">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry9', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 10:</strong> Wall jump off the right side of the screen to reach the collectible.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/e/eb/180124_CI_C1_S10.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry10">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry10', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 11:</strong> Wall jump off the right side of the screen to reach the collectible.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/f/fd/180124_CI_C1_S11_B.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry11">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry11', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 12:</strong> Wall jump off the right side of the screen to reach the collectible.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/6/66/180124_CI_C1_S12_B.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry12">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry12', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 13:</strong> Wall jump off the right side of the screen to reach the collectible.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/7/7d/180124_CI_C1_S13.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry13">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry13', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 14:</strong> Wall jump off the right side of the screen to reach the collectible.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/2/27/180124_CI_C1_S14.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry14">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry14', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 15:</strong> Wall jump off the right side of the screen to reach the collectible.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/0/00/180124_CI_C1_S15.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry15">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry15', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 16:</strong> Wall jump off the right side of the screen to reach the collectible.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/6/63/180124_CI_C1_S16_C.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry16">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry16', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 17:</strong> Wall jump off the right side of the screen to reach the collectible.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/a/af/180124_CI_C1_Cassette.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry17">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry17', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 18:</strong> Wall jump off the right side of the screen to reach the collectible.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/4/4d/180124_CI_C1_S18.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry18">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry18', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 19:</strong> Wall jump off the right side of the screen to reach the collectible.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/c/c2/180124_CI_C1_S19.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry19">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry19', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+            <li><strong>Strawberry 20:</strong> Wall jump off the right side of the screen to reach the collectible.
+                <br>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/celeste/d/d9/180124_CI_C1_S20_C.png?width=640" alt="">
+                <form action="{{ url_for('update_progress_route') }}" method="post" target="hidden_iframe">
+                    <input type="hidden" name="collectible_name" value="strawberry20">
+                    <input type="checkbox" name="collected" value="true" {% if collectible_statuses.get('strawberry20', False) %}checked{% endif %} onchange="this.form.submit()"> Collected
+                </form>
+            </li>
+        </ol>
+    </div>
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+{% endblock %}
